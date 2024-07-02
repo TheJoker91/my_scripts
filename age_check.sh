@@ -7,7 +7,7 @@
 echo "Enter your age:"
 read A
 
-if [ -z $A ] || [ $A = $A ]
+if [ -z $A ] || ! [ $A -eq $A ] 2>/dev/null
 then
 echo "Please enter a valid integer, representing your age"
 exit 1
